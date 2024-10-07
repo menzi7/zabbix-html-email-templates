@@ -24,7 +24,7 @@
     th, td { border-top: 1px solid LightGray; text-align: left; }
     .green { background-color: ForestGreen; }
     .red { background-color: Tomato; }
-    .blue { background-color: LightBlue; }
+    .blue { background-color: #0065b1; }
     .gray { background-color: Gray; color:White; }
     .light { background-color:LightGray; }
 </style>
@@ -36,10 +36,10 @@
     <div class="green"><h1>&#9989; ZABBIX EVENT RESOLVED &#9989;</h1></div>
     <div class="light"><h4>HOST INFORMATION</h4></div>
     <table>
-        <tr><td>&#128256; Proxy:</td>          <td>{PROXY.NAME}</td></tr>
         <tr><td>&#127991;&#65039; Name:</td>   <td>{HOST.NAME}</td></tr>
         <tr><td>&#128187; IP:</td>             <td>{HOST.CONN}</td></tr>
         <tr><td>&#128221; Description:</td>    <td>{HOST.DESCRIPTION}</td></tr>
+        <tr><td>&#128256; Type:</td>           <td>{INVENTORY.TYPE}</td></tr>
         <tr><td style="width:30%"> </td>       <td> </td></tr>
     </table>
     <div class="light"><h4>EVENT DETAILS</h4></div>

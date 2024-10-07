@@ -24,7 +24,7 @@
     th, td { border-top: 1px solid LightGray; text-align: left; }
     .green { background-color: ForestGreen; }
     .red { background-color: Tomato; }
-    .blue { background-color: LightBlue; }
+    .blue { background-color: #0065b1; }
     .gray { background-color: Gray; color:White; }
     .light { background-color:LightGray; }
 </style>
@@ -36,15 +36,15 @@
     <div class="red"><h1>&#9888;&#65039; ZABBIX EVENT &#9888;&#65039;</h1></div>
     <div class="light"><h4>HOST INFORMATION</h4></div>
     <table>
-        <tr><td>&#128256; Proxy:</td>          <td>{PROXY.NAME}</td></tr>
         <tr><td>&#127991;&#65039; Name:</td>   <td>{HOST.NAME}</td></tr>
         <tr><td>&#128187; IP:</td>             <td>{HOST.CONN}</td></tr>
         <tr><td>&#128221; Description:</td>    <td>{HOST.DESCRIPTION}</td></tr>
+        <tr><td>&#128256; Type:</td>           <td>{INVENTORY.TYPE}</td></tr>
         <tr><td style="width:30%"> </td>       <td> </td></tr>
     </table>
     <div class="light"><h4>EVENT DETAILS</h4></div>
     <table>
-        <tr><td>&#128680; Event:</td>          <td><a href="{$ZABBIX.URL}/tr_events.php?triggerid={TRIGGER.ID}&eventid={EVENT.ID}">{EVENT.NAME}</a<</td></tr>
+        <tr><td>&#128680; Event:</td>          <td><a href="{$ZABBIX.URL}/tr_events.php?triggerid={TRIGGER.ID}&eventid={EVENT.ID}">{EVENT.NAME}</a></td></tr>
         <tr><td>&#9888;&#65039; Severity:</td> <td>{TRIGGER.SEVERITY}</td></tr>
         <tr><td>&#128347; Start:</td>          <td>{EVENT.TIME} from {EVENT.DATE}</td></tr>
         <tr><td>&#128178; Value:</td>          <td>{ITEM.VALUE}</td></tr>
