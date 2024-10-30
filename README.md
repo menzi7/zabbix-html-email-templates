@@ -47,6 +47,9 @@ You can customize many tags. From the logo, trigger/host information, colors, fo
 ### [HTML 01](./templates/html-01/)
 | ![Problem E-mail](./templates/html-01/images/problem-01.png) | ![Resolved E-mail](./templates/html-01/images/resolved-01.png) | ![Updated E-mail](./templates/html-01/images/updated-01.png)
 | :---: | :---: | :---: |
+
+> **This one doesn't work**
+
 <BR>
 
 ### [HTML 02](./templates/html-02/)
@@ -57,4 +60,7 @@ You can customize many tags. From the logo, trigger/host information, colors, fo
 ### [HTML 03](./templates/html-03/)
 | ![Problem E-mail](./templates/html-03/images/problem-03.png) | ![Resolved E-mail](./templates/html-03/images/resolved-03.png) | ![Updated E-mail](./templates/html-03/images/updated-03.png)
 | :---: | :---: | :---: |
+
+> **Best one imo**
+
 <BR>

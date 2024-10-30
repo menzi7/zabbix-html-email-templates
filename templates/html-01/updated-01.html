@@ -85,8 +85,7 @@
                                                                 <p style="text-align: left;">
                                                                     <span style="font-family: Arial;">
                                                                         <strong>
-                                                                            <span style="font-size: 10pt;">Problem
-                                                                                started:</span>
+                                                                            <span style="font-size: 10pt;">User:</span>
                                                                         </strong>
                                                                     </span>
                                                                 </p>
@@ -96,8 +95,7 @@
                                                                             <span style="font-size: 10pt;">
                                                                                 <strong>
                                                                                     <strong
-                                                                                        style="color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small; text-decoration-color: initial;">Problem
-                                                                                        duration:</strong>
+                                                                                        style="color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small; text-decoration-color: initial;">Update:</strong>
                                                                                     <br />
                                                                                 </strong>
                                                                             </span>
@@ -108,7 +106,7 @@
                                                                     <span style="font-family: Arial;">
                                                                         <strong>
                                                                             <span style="font-size: 10pt;">
-                                                                                <strong>Severity:</strong>
+                                                                                <strong>Action:</strong>
                                                                             </span>
                                                                         </strong>
                                                                     </span>
@@ -117,33 +115,7 @@
                                                                     <span style="font-family: Arial;">
                                                                         <strong>
                                                                             <span style="font-size: 10pt;">
-                                                                                <strong>Item Key:&nbsp;</strong>
-                                                                            </span>
-                                                                        </strong>
-                                                                    </span>
-                                                                </p>
-                                                                <p style="text-align: left;">
-                                                                    <span style="font-family: Arial;">
-                                                                        <strong>
-                                                                            <span style="font-size: 10pt;">
-                                                                                <strong>
-                                                                                    <strong>Last Value:</strong>
-                                                                                </strong>
-                                                                            </span>
-                                                                        </strong>
-                                                                    </span>
-                                                                </p>
-                                                                <p style="text-align: left;">
-                                                                    <span style="font-family: Arial;">
-                                                                        <strong>
-                                                                            <span style="font-size: 10pt;">
-                                                                                <strong>
-                                                                                    <strong>
-                                                                                        <strong>
-                                                                                            <strong>Description:</strong>
-                                                                                        </strong>
-                                                                                    </strong>
-                                                                                </strong>
+                                                                                <strong>Message:&nbsp;</strong>
                                                                             </span>
                                                                         </strong>
                                                                     </span>
@@ -158,40 +130,25 @@
                                                                     </span>
                                                                 </p>
                                                                 <p style="text-align: left;">
-                                                                    <span
-                                                                        style="font-size: 10pt; font-family: Arial;">at
-                                                                        {EVENT.TIME} on {EVENT.DATE} 
+                                                                    <span style="font-family: Arial;">
+                                                                        <span
+                                                                            style="font-size: 10pt;">{USER.FULLNAME}</span>
                                                                     </span>
                                                                 </p>
                                                                 <p style="text-align: left;">
                                                                     <span
-                                                                        style="font-size: 10pt; font-family: Arial;">{EVENT.DURATION}
+                                                                        style="font-size: 10pt; font-family: Arial;">{EVENT.UPDATE.TIME} from {EVENT.UPDATE.DATE} 
+                                                                    </span>
+                                                                </p>
+                                                                <p style="text-align: left;">
+                                                                    <span
+                                                                        style="font-size: 10pt; font-family: Arial;">{EVENT.UPDATE.ACTION}
                                                                         <br />
                                                                     </span>
                                                                 </p>
                                                                 <p style="text-align: left;">
                                                                     <span style="font-size: 10pt; font-family: Arial;">
-                                                                        {TRIGGER.SEVERITY} </span>
-                                                                </p>
-                                                                <p style="text-align: left;">
-                                                                    <span style="font-family: Arial;">
-                                                                        <span
-                                                                            style="font-size: 10pt;">{ITEM.KEY1}</span>
-                                                                    </span>
-                                                                </p>
-                                                                <p style="text-align: left;">
-                                                                    <span style="font-family: Arial;">
-                                                                        <span
-                                                                            style="font-size: 10pt;">{ITEM.VALUE1}</span>
-                                                                    </span>
-                                                                </p>
-                                                                <p style="text-align: left;">
-                                                                    <span style="font-family: Arial;">
-                                                                        <span
-                                                                            style="font-size: 10pt;">{TRIGGER.DESCRIPTION}
-                                                                            <br />
-                                                                        </span>
-                                                                    </span>
+                                                                        {EVENT.UPDATE.MESSAGE} </span>
                                                                 </p>
                                                             </td>
                                                         </tr>
@@ -251,17 +208,17 @@
                                                                 </p>
                                                                 <p style="text-align: left;">
                                                                     <span style="font-size: 10pt; font-family: Arial;">
-                                                                        {?last(/{HOST.HOST}/system.uptime)} 
+                                                                        {?last(/{HOST.NAME}/system.uptime)} 
                                                                     </span>
                                                                 </p>
                                                                 <p style="text-align: left;">
                                                                     <span style="font-size: 10pt; font-family: Arial;">
-                                                                        {?last(/{HOST.HOST}/system.cpu.util)} 
+                                                                        {?last(/{HOST.NAME}/system.cpu.util)} 
                                                                     </span>
                                                                 </p>
                                                                 <p style="text-align: left;">
                                                                     <span style="font-size: 10pt; font-family: Arial;">
-                                                                        {?last(/{HOST.HOST}/vm.memory.util)}
+                                                                        {?last(/{HOST.NAME}/vm.memory.util)}
                                                                     </span>
                                                                 </p>
                                                             </td>
