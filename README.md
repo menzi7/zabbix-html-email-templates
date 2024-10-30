@@ -44,17 +44,17 @@ You can customize many tags. From the logo, trigger/host information, colors, fo
 
 ## Samples
 
-### HTML 01
+### [HTML 01](./templates/html-01/)
 | ![Problem E-mail](./templates/html-01/images/problem-01.png) | ![Resolved E-mail](./templates/html-01/images/resolved-01.png) | ![Updated E-mail](./templates/html-01/images/updated-01.png)
 | :---: | :---: | :---: |
 <BR>
 
-### HTML 02
+### [HTML 02](./templates/html-02/)
 | ![Problem E-mail](./templates/html-02/images/problem-02.png) | ![Resolved E-mail](./templates/html-02/images/resolved-02.png) | ![Updated E-mail](./templates/html-02/images/updated-02.png)
 | :---: | :---: | :---: |
 <BR>
 
-### HTML 03
+### [HTML 03](./templates/html-03/)
 | ![Problem E-mail](./templates/html-03/images/problem-03.png) | ![Resolved E-mail](./templates/html-03/images/resolved-03.png) | ![Updated E-mail](./templates/html-03/images/updated-03.png)
 | :---: | :---: | :---: |
 <BR>
